@@ -1,0 +1,46 @@
+{
+    "apiVersion": "tilt.dev/v1alpha1",
+    "kind": "UIResource",
+    "metadata": {
+        "creationTimestamp": "2021-07-23T16:08:05Z",
+        "labels": {
+            "tilt.dev/owner-kind": "Tiltfile"
+        },
+        "name": "foo",
+        "resourceVersion": "26",
+        "uid": "f0ce09e6-1361-4255-8595-7f165d9abe20"
+    },
+    "spec": {},
+    "status": {
+        "buildHistory": [
+            {
+                "error": "Command \"echo bye; exit 1\" failed: exit status 1",
+                "finishTime": "2021-07-23T16:08:39.168277Z",
+                "spanID": "build:6",
+                "startTime": "2021-07-23T16:08:39.158696Z"
+            },
+            {
+                "finishTime": "2021-07-23T16:08:32.971135Z",
+                "spanID": "build:5",
+                "startTime": "2021-07-23T16:08:32.701365Z"
+            }
+        ],
+        "currentBuild": {
+            "spanID": "build:7",
+            "startTime": "2021-07-23T16:08:46.559893Z"
+        },
+        "hasPendingChanges": true,
+        "lastDeployTime": "2021-07-23T16:08:32.971135Z",
+        "localResourceInfo": {},
+        "order": 2,
+        "pendingBuildSince": "2021-07-23T16:08:46.558362Z",
+        "runtimeStatus": "not_applicable",
+        "specs": [
+            {
+                "id": "local:bye",
+                "type": "local"
+            }
+        ],
+        "updateStatus": "in_progress"
+    }
+}

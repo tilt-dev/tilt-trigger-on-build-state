@@ -1,0 +1,13 @@
+local_resource('init', 'echo init', auto_init=False)
+
+# give everything a resource_dep on 'init' so that we can start them after
+# the watcher is running
+
+# r_ prefix to distinguish, e.g., "failure" resource name from "failure" status
+
+# non-trivial duration
+local_resource('r_1sec', 'sleep 1', resource_deps=['init'])
+# failure
+local_resource('r_failure', 'echo oops; exit 1', resource_deps=['init'])
+# success
+local_resource('r_success', 'echo "yay!"', resource_deps=['init'])

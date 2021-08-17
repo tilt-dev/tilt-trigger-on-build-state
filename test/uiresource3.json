@@ -1,0 +1,52 @@
+{
+  "apiVersion": "tilt.dev/v1alpha1",
+  "kind": "UIResource",
+  "metadata": {
+    "creationTimestamp": "2021-07-23T19:23:01Z",
+    "labels": {
+      "tilt.dev/owner-kind": "Tiltfile"
+    },
+    "managedFields": [
+      {
+        "apiVersion": "tilt.dev/v1alpha1",
+        "fieldsType": "FieldsV1",
+        "fieldsV1": {
+          "f:metadata": {
+            "f:labels": {
+              ".": {},
+              "f:tilt.dev/owner-kind": {}
+            }
+          },
+          "f:status": {
+            "f:localResourceInfo": {},
+            "f:order": {},
+            "f:specs": {},
+            "f:triggerMode": {},
+            "f:updateStatus": {}
+          }
+        },
+        "manager": "tilt",
+        "operation": "Update",
+        "time": "2021-07-23T19:23:01Z"
+      }
+    ],
+    "name": "3",
+    "resourceVersion": "7",
+    "uid": "60b05c3c-a052-4396-99ee-398b2415889c"
+  },
+  "spec": {},
+  "status": {
+    "lastDeployTime": null,
+    "localResourceInfo": {},
+    "order": 4,
+    "pendingBuildSince": null,
+    "specs": [
+      {
+        "id": "local:3",
+        "type": "local"
+      }
+    ],
+    "triggerMode": 1,
+    "updateStatus": "pending"
+  }
+}

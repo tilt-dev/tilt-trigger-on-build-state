@@ -1,0 +1,5 @@
+local_resource('shellcheck', 'shellcheck *.sh', deps='.')
+
+load('Tiltfile', 'trigger_on_build_state')
+
+trigger_on_build_state('watch', 'echo RESOURCE="$RESOURCE_NAME" TIMESTAMP="$TIMESTAMP" EVENT="$EVENT" DURATION="$DURATION" RESULT="$RESULT"')
